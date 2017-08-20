@@ -100,5 +100,8 @@ int main()
 
 	std::cin.get();
 
+	delete handler;
+	delete secondHandler;
+
 	return 0;
 }
