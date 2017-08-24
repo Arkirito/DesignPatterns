@@ -50,6 +50,11 @@ public:
 		_car = new Car();
 	}
 
+	~CarProxy()
+	{
+		delete _car;
+	}
+
 	void Run()
 	{
 		std::cout << "Checking for safety driving..." << std::endl;
@@ -76,6 +81,8 @@ int main()
 	car->UseNitro();
 
 	std::cin.get();
+
+	delete car;
 
 	return 0;
 }
